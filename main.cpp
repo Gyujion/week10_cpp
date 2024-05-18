@@ -5,9 +5,10 @@
 #include <iostream>
 
 // TODO: T 타입을 적절한 타입으로 변경
-void print(T &list) { list.print(); }
+void print(LinkedList &list) { list.print(); }
 
-void testQueue() {
+void testQueue()
+{
   Queue queue;
 
   for (int i = 0; i < 10; i++)
@@ -19,13 +20,15 @@ void testQueue() {
   std::cout << queue.peek() << std::endl;
   print(queue);
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 5; i++)
+  {
     std::cout << queue.pop() << std::endl;
   }
   print(queue);
 }
 
-void testStack() {
+void testStack()
+{
   Stack stack;
 
   for (int i = 0; i < 10; i++)
@@ -37,13 +40,15 @@ void testStack() {
   std::cout << stack.peek() << std::endl;
   print(stack);
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 5; i++)
+  {
     std::cout << stack.pop() << std::endl;
   }
   print(stack);
 }
 
-void testList() {
+void testList()
+{
   List list;
 
   for (int i = 0; i < 10; i++)
@@ -52,7 +57,8 @@ void testList() {
   print(list);
 }
 
-int main() {
+int main()
+{
   testQueue();
   testStack();
   testList();

@@ -50,7 +50,7 @@ void LinkedList::insert(int index, int value)
 int LinkedList::get(int index)
 {
     if (index < 0 || index > size_)
-        return;
+        return -1;
 
     Node *current = head_;
     for (int i = 0; i < index; i++)
